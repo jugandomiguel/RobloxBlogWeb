@@ -1,0 +1,181 @@
+/* Fonts */
+@font-face {
+    font-family: "Roblox Font";
+    src: url(fonts/roblox/Roblox2017-v6dO.ttf);
+}  
+
+/* Animations */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+    
+}
+@keyframes unrotate {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+    
+}
+
+/* Main */
+body {
+    background-image: url(img/c24cd7ef11cd058ed9392bae5b81e0d7.jpg);
+    background-repeat: no-repeat;
+    background-size: 124%;
+    background-attachment: fixed;
+    margin: 0px;
+}
+
+
+
+header h1 {
+    font-family: "Roblox Font";
+    text-align: center;
+}
+
+header .o {
+    display: inline-block;
+    transform: rotate(0deg);
+    cursor: pointer;
+    animation-name: unrotate;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}    
+header:hover .o {
+    display: inline-block;
+    transform: rotate(15deg);
+    cursor: pointer;
+    animation-name: rotate;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+
+#general {
+    width: 1800px;
+    margin: 0px auto;
+}
+
+/* Navigation Menu */
+#navigation-menu {
+    border-radius: 10px 10px 0px 0px;
+    background-color: #F1F1F1;
+}
+#navigation-menu ul li {
+    float: left;
+    display: block;
+}
+#navigation-menu ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    background-color: #F1F1F1;
+    border-left: 1px solid #333333;
+}
+
+#navigation-menu ul li:hover a{
+    color: white;
+    background-color: #b6b6b6;
+}
+
+#dropdown-juegos {
+    position: relative;
+    display: inline;
+}
+
+#dropdown-juegos div {
+    display: none;
+    position: absolute;
+    background-color: #b6b6b6;
+    width: 1780px;
+    height: 200px;
+    padding-left: 20px;
+    left: -145%;
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+#dropdown-juegos:hover div {
+    display: block;
+}
+
+/* Articles */
+#main-articles {
+    width: 98.9%;
+    float: left;
+    height: 100%;
+    padding: 10px;
+    background-color: #D8D8D8;
+}
+.articles{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-color: #bbbbbb;
+    border-radius: 8px;
+    border: 2px solid black;
+    float: left;
+    max-width: 367px;
+    max-height: 332px;
+}
+.articles header .date {
+    margin-bottom: 0px;
+}
+.articles header h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 0px;
+}
+
+.articles header .date {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.articles img {
+    display: block;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.articles .by {
+    margin-top: -22px;
+}
+
+.article-desc {
+    margin-top: -17px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.footer-article {
+    margin-top: -12px;
+}
+
+
+/* ClearFix */
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* Info Footer */
+
+
+/* Footer */
+.footer-main {
+    background-color: #F1F1F1;
+    margin: -16px auto;
+    width: 1800px;
+}
+
+footer p {
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    text-align: center;
+}
